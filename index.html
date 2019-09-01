@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="https://cdn.selise.biz/Selise/selise-logo.png"style="height: 45px;left: 50px; margin-top:10px; margin-left:2%;">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img
+              src="https://cdn3.iconfinder.com/data/icons/glypho-shopping-and-ecommerce/64/cart-fast-speed-512.png"
+              alt="cart"
+              style="height: 45px;float:right"
+            />
+            <div class="w3-badge" id="cart_counter">0</div>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="customer_cart"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="details_modal" class="modal">
+          <button type="button" class="cancelbtn" id="cancel_btn">X</button>
+        <div class="modal-content">
+          <p style="font-size: 24px; text-align: center;padding: 30px;">Barbecue or barbeque (BBQ) is a cooking method, a style of food, and a name for a meal or gathering at which this style of food is cooked and served.
+            
+          </p>
+        </div>
+      </div>
+
+      <section id="product_list"></section>
+    </main>
+
+    <script src="./js/product.js"></script>
+    <script src="./js/clickFunctions.js"></script>
+    <script src="./js/createElement.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+#product_list {
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  background-color: aquamarine;
+}
+
+/*.modal {
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow: auto; /* Enable scroll if needed */
+  overflow: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  height: 30%;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+.cancelbtn {
+  position: absolute;
+  font-size: 30px;
+  top: 1%;
+  right: 1%;
+  height: 48px;
+  padding: 10px 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.98);
+}
+
+.w3-badge {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  border: solid;
+  background-color: white;
+  color: rgb(26, 41, 131);
+  font-size: 15px;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+nav {
+  height: 70px;
+  background-color: rgb(244, 248, 234);
+}
+
+.product-img {
+  width: 350px;
+  height: 220px;
+  object-fit: contain;
+}
+.product-name {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 30px;
+}
+.product-price {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  right: 30px;
+}
+.product-details {
+  white-space: nowrap;
+  padding-top: 10px;
+  width: 350px;
+  font-size: 20px;
+  position: absolute;
+  left: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  position: relative;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 20px;
+}
+/* Links inside the dropdown */
+.dropdown-content div {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.cart-item {
+  display: block;
+  border: solid 1px;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.button-box {
+  position: relative;
+  top: 35px;
+  height: 30px;
+}
+.button-box > div,
+button {
+  position: absolute;
+  bottom: 5px;
+}
+.button-box .add-btn {
+  left: 30px;
+}
+.button-box .details-btn {
+  right: 30px;
+}
+.button-box .decrement-btn {
+  display: none;
+  left: 180px;
+}
+.button-box .increment-btn {
+  display: none;
+  right: 150px;
+}
+.button-box .no-of-same-product {
+  display: none;
+  left: 208px;
+  font-size: 18px;
+}
